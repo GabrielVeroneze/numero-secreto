@@ -1,0 +1,11 @@
+.box {
+    align-items: center;
+    background: var(--cor-fundo);
+    color: var(--cor-primaria);
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fonte-primaria);
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}

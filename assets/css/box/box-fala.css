@@ -1,0 +1,7 @@
+.box__fala {
+    border: 2px solid var(--cor-primaria);
+    display: inline-block;
+    font-size: 4rem;
+    margin: 1.25rem 0;
+    padding: 0.625rem;
+}

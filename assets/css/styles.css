@@ -1,4 +1,8 @@
-
+@import url('./box/box.css');
+@import url('./box/box-titulo.css');
+@import url('./box/box-dica.css');
+@import url('./box/box-mensagem.css');
+@import url('./box/box-fala.css');
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 
@@ -7,4 +11,8 @@
     --cor-fundo: #0AA1DD;
 
     --fonte-primaria: 'Montserrat', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
 }
