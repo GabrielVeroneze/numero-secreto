@@ -3,8 +3,7 @@ const maiorValor = 725
 
 const numeroSecreto = gerarNumeroAleatorio(menorValor, maiorValor)
 
-function gerarNumeroAleatorio(min, max) {
-    
+function gerarNumeroAleatorio(min, max) {  
     return parseInt(Math.random() * ((max + 1) - min) + min)
 }
 
