@@ -9,5 +9,3 @@ function gerarNumeroAleatorio(min, max) {
 
 document.querySelector('[data-menor-valor]').innerHTML = menorValor
 document.querySelector('[data-maior-valor]').innerHTML = maiorValor
-
-console.log(numeroSecreto)
