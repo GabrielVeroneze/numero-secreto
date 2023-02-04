@@ -1,6 +1,8 @@
 import valores from './sortear-numero.js'
 const SpeechRecognition = window.SpeechRecognition || webkitSpeechRecognition;
 const SpeechGrammarList = window.SpeechGrammarList || webkitSpeechGrammarList;
+const SpeechRecognitionEvent = window.SpeechRecognitionEvent || webkitSpeechRecognitionEvent;
+
 
 let numeros = []
 for (let i = valores.menorValor; i <= valores.maiorValor; i++) {
