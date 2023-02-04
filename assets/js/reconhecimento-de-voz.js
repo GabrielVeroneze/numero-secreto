@@ -26,5 +26,5 @@ window.addEventListener('load', () => {
 })
 
 reconhecimento.addEventListener('result', (e) => {
-    console.log(e.results)
+    document.querySelector('#teste').innerHTML = e.results
 })
