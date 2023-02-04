@@ -26,5 +26,5 @@ window.addEventListener('load', () => {
 })
 
 reconhecimento.addEventListener('result', (e) => {
-    document.querySelector('#teste').innerHTML = e.results[0]
+    document.querySelector('#teste').innerHTML = e.results[0][0]
 })
