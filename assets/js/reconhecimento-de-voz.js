@@ -25,5 +25,5 @@ window.addEventListener('load', () => {
 })
 
 reconhecimento.addEventListener('result', (e) => {
-    window.alert('falado')
+    window.alert('audio gravado')
 })
