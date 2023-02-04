@@ -1,9 +1,29 @@
 import valores from './sortear-numero.js'
+const SpeechRecognition = window.SpeechRecognition || webkitSpeechRecognition;
+const SpeechGrammarList = window.SpeechGrammarList || webkitSpeechGrammarList;
 
-console.log(valores)
-console.log(valores.menorValor)
-console.log(valores.maiorValor)
+let numeros = []
+for (let i = valores.menorValor; i <= valores.maiorValor; i++) {
+    numeros.push(i)
+}
 
-const gramatica = '#JSGF V1.0; grammar numeros; public <numero> = '
+const gramatica = `#JSGF V1.0; grammar numeros; public <numero> = ${numeros.join(' | ')}`
 
-const reconecimento = new SpeechRecognition() || new webkitSpeechRecognition
+const reconhecimento = new SpeechRecognition()
+
+const listaDeFala = new SpeechGrammarList()
+listaDeFala.addFromString(gramatica, 1)
+
+reconhecimento.grammars = listaDeFala
+reconhecimento.continuous = false
+reconhecimento.lang = 'pt-br'
+reconhecimento.interimResults = false
+reconhecimento.maxAlternatives = 1
+
+window.addEventListener('load', () => {
+    reconhecimento.start()
+})
+
+reconhecimento.addEventListener('result', (e) => {
+    window.alert(e)
+})
