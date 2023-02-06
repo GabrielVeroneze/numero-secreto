@@ -28,7 +28,7 @@ recognition.maxAlternatives = 1
 // Inicia o serviço de reconhecimento de fala ouvindo o áudio de entrada
 recognition.start()
 
-
+// teste para verificar o resultado do reconhecimento de fala
 recognition.addEventListener('result', (e) => {
     document.querySelector('#teste').innerHTML = e.results[0][0].transcript
 })
