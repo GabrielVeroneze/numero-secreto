@@ -18,7 +18,6 @@ const recognition = new SpeechRecognition()
 
 
 recognition.grammars = listaDeFala
-
 // Define se o sistema de reconhecimento de fala deve retornar resultados provisórios ou apenas resultados finais
 recognition.continuous = false
 // Define o idioma do reconhecimento. Definir isso é uma boa prática e, portanto, recomendado
