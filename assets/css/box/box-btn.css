@@ -1,0 +1,10 @@
+.box__btn {
+    background: var(--cor-primaria);
+    border: none;
+    border-radius: 35px;
+    color: var(--cor-fundo);
+    cursor: pointer;
+    font-family: var(--fonte-secundaria);
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}

@@ -1,4 +1,5 @@
 const chuteElemento = document.querySelector('[data-id="chute"]')
+const principalElemento = document.querySelector('[data-id="principal"]')
 
 // O Chrome atualmente oferece suporte ao reconhecimento de fala com propriedades prefixadas, incluímos estas linhas para alimentar os objetos corretos no Chrome e quaisquer implementações futuras que possam oferecer suporte aos recursos sem um prefixo
 const SpeechRecognition = window.SpeechRecognition || webkitSpeechRecognition;
@@ -27,5 +28,6 @@ function exibirChuteNaTela(chute) {
         <p class="box__texto">Você disse:</p>
         <div class="box__fala">${chute}</div>
     `
-    // <p class="box__texto">O número secreto é maior<i class="fa-solid fa-arrow-up-long"></i></p>
 }
+
+recognition.addEventListener('end', () => recognition.start())
