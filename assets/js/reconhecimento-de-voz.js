@@ -26,6 +26,6 @@ function exibirChuteNaTela(chute) {
     chuteElemento.innerHTML = `
         <p class="box__texto">Você disse:</p>
         <div class="box__fala">${chute}</div>
-        <p class="box__texto">O número secreto é maior<i class="fa-solid fa-arrow-up-long"></i></p>
     `
+    // <p class="box__texto">O número secreto é maior<i class="fa-solid fa-arrow-up-long"></i></p>
 }

@@ -1,13 +1,19 @@
 function verificaChute(chute) {
     const numero = Number(chute)
-    console.log(numero)
 
     if (chuteForInvalido(numero)) {
-        console.log('Valor inválido!')
+        chuteElemento.innerHTML += '<p class="box__texto">Valor inválido</p>'
     }
 
     if ((chuteExcederValorPermitido(numero))) {
-        console.log(`Valor inválido: O número secreto precisa estar entre ${menorValor} e ${maiorValor} `)
+        chuteElemento.innerHTML += `<p class="box__texto">Valor inválido: Fale um número entre ${menorValor} e ${maiorValor}</p>`
+    }
+
+    if (numero === numeroSecreto) {
+        document.querySelector('[data-id="principal"]').innerHTML = `
+            <h1 class="box__titulo">Você Acertou</h1>
+            <h3 class="box__dica">O número secreto era ${numeroSecreto}</h3>
+        `
     }
 }
 
