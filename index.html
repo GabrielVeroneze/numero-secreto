@@ -23,7 +23,9 @@
             <p class="box__texto">O número secreto é maior<i class="fa-solid fa-arrow-up-long"></i></p> -->
         </div>
     </main>
-    <script type="module" src="assets/js/sortear-numero.js"></script>
-    <script type="module" src="assets/js/reconhecimento-de-voz.js"></script>
+    <script src="assets/js/sortear-numero.js"></script>
+    <!-- A função verificaChute() do arquivo 'validacao.js' precisa ser carregada antes de ser chamada no arquivo 'reconhecimento-de-voz.js' para evitar erro -->
+    <script src="assets/js/validacao.js"></script>
+    <script src="assets/js/reconhecimento-de-voz.js"></script>
 </body>
 </html>
